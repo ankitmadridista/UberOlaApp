@@ -1,16 +1,20 @@
-﻿using UberOlaApp.Common;
+﻿using UberOlaApp.Common.Enums;
 
 namespace UberOlaApp.Models
 {
     public class Driver
     {
-        string name { get; }
-        bool avail;
-        RATING RATING { get; }
-
-        public Driver(string name, RATING rating)
+        public string Name { get; }
+        public bool avail;
+        public EnRATING RATING { get; }
+        public Driver()
         {
-            this.name = name;
+            
+        }
+
+        public Driver(string name, EnRATING rating)
+        {
+            this.Name = name;
             this.RATING = rating;
             this.avail = false;
         }

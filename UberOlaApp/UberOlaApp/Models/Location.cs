@@ -2,10 +2,12 @@
 {
     public class Location
     {
-        double latitude, longitude;
-        public Location(double lattitude, double longitude)
+        public double latitude { get; }
+        public double longitude { get; }
+        
+        public Location(double latitude, double longitude)
         {
-            this.latitude = lattitude;
+            this.latitude = latitude;
             this.longitude = longitude;
         }
     }

@@ -1,28 +1,17 @@
-﻿using UberOlaApp.Common;
+﻿using UberOlaApp.Common.Enums;
 
 namespace UberOlaApp.Models
 {
     public class Rider
     {
-        string name { get; }
-        RATING rating { get; }
+        public string Name { get; }
+        public EnRATING Rating { get; }
 
-        public Rider(string name, RATING rating)
+        public Rider(string name, EnRATING rating)
         {
-            this.name = name;
-            this.rating = rating;
+            this.Name = name;
+            this.Rating = rating;
         }
 
-
-
-        //Rider(string pName, RATING pRating) : name(pName), rating(pRating) { }
-        //    string getRiderName()
-        //    {
-        //        return name;
-        //    }
-        //    RATING getRating()
-        //    {
-        //        return rating;
-        //    }
     }
 }
