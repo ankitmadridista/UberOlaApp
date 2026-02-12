@@ -1,28 +1,34 @@
-*/.DS_Store
-*DS_Store
-*.pyc
-*/.pyc
-**/__pycache__/
+# Build outputs
+bin/
+obj/
+out/
 
-backups/
-crm_extracts/
+# Compiled binaries and debug symbols
+*.dll
+*.pdb
+*.exe
 
-frontend/accounts/.DS_Store
-frontend/admin/.DS_Store
-frontend/site/templates/.DS_Store
-frontend/site/.DS_Store
+# User-specific files
+*.user
+*.suo
+*.userosscache
 
-frontend/__pycache__/*.pyc
-crm_extracts/csv/o20211019_decimals.csv
-crm_extracts/csv/o20211019_dummy.csv
+# IDE / Editor settings
+.vs/
+.vscode/
+.idea/
 
+# NuGet packages
+*.nupkg
+packages/
 
+# Publish outputs
+publish/
+wwwroot/
+
+# Temporary / OS files
+*.tmp
+*.temp
 .DS_Store
-
-
-*/dll
-*dll
-*/exe
-*exe
-UberOlaApp/*.sln
-UberOlaApp/UberOlaApp/bin
+Thumbs.db
+*.vsidx
